@@ -1,4 +1,4 @@
-const orders = sessionStorage.getItem('Funiture-cart');
+// const orders = sessionStorage.getItem('Funiture-cart');
 
 function sendMail() {
   
@@ -13,7 +13,7 @@ function sendMail() {
     // qty: document.getElementById("qty").value,
 
   };
-  console.log(orders.items);
+  // console.log(orders.items);
   const serviceID = "service_6brmgh5";
   const templateID = "template_8nnbcz5";
 
