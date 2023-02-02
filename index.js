@@ -6,9 +6,9 @@
 //   params = {product: JSON.stringify(orders)};
 // }
 
-var kkk = sessionStorage.getItem("key").reduce((prev, curr) => {
+var kkk = (sessionStorage.getItem("key") || []).reduce((prev, curr) => {
   return prev + curr.product + ", qty: " + curr.qty + "; ";
-}, "");
+}, "")
 
 function sendMail() {
 
