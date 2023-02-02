@@ -23,7 +23,7 @@ function sendMail() {
 
   };
   console.log(params);
-  sessionStorage.setItem('Data',params);
+  sessionStorage.setItem('Data',params.items);
 
 
   const serviceID = "service_ua2pklx";
