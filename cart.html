@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="styles.css" media="screen" type="text/css" />
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <script type="text/javascript" src="jquery.store.js"></script>
+    
+        
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Giỏ hàng - S . A . P . O</title>
+		<link
+		rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+		crossorigin="anonymous"
+	  	/>
+	  	<script src="index.js"></script>
+	  
+  
+	  	<script
+		type="text/javascript"
+		src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+	  	></script>
+	  	<script type="text/javascript">
+		(function () {
+		  emailjs.init("3b1jmWOkCYvLS-zdF");
+		})();
+	  	</script>
+    </head>
+		
+	<body>
+
+
+
+	<div id="site">
+		<br> <br> <br> <br> <h1 class="section__title-center2">
+			<br> GIỎ HÀNG
+		</h1>
+		<div id="content">
+			
+			<form id="shopping-cart" action="cart.html" >
+				<table class="shopping-cart">
+				<thead>
+					<tr>
+						<th scope="col">Sản phẩm</th>
+						<th scope="col">Số lượng</th>
+						<th scope="col" >Thành tiền</th> 
+						<th scope="col" >Thao tác</th>
+					</tr>
+				</thead>
+				<tbody>
+				
+				</tbody>
+				</table>
+				<ul id="shopping-cart-actions">
+					<li>
+						<button class="button button--flex" name="update" id="update-cart" class="btn" >
+                            Bấm để xem tổng số tiền
+                            <i class="ri-arrow-right-up-line button__icon"></i>
+                        </button>
+						
+					</li>
+				</ul>
+				<p id="sub-total">
+					<strong>Tổng số tiền</strong>: <span id="stotal"></span> 
+				</p>
+
+			</form>
+		</div>
+		
+	</div>
+
+	<!--==================== CONTACT ====================-->
+	<section class="contact section container" id="contact">                
+		<div class="contact__container grid">
+			<div class="contact__box">
+				<h2 class="section__title">
+					XÁC NHẬN THÔNG TIN <br> CỦA KHÁCH HÀNG 
+				</h2>
+
+				<div class="contact__data">
+					<div class="contact__information">
+						<h3 class="contact__subtitle">Số điện thoại</h3>
+						<span class="contact__description">
+							<i class="ri-phone-line contact__icon"></i>
+							0941825009
+						</span>
+					</div>
+
+					<div class="contact__information">
+						<h3 class="contact__subtitle">Gmail</h3>
+						<span class="contact__description">
+							<i class="ri-mail-line contact__icon"></i>
+							sapothixaquangtri@gmail.com
+						</span>
+					</div>
+				</div>
+			</div>
+
+            <form action="" class="contact__form">
+                <div class="contact__inputs">
+                    <div class="contact__content">
+                        <div class="form-group">            
+                          <h5 for="name">Họ và tên</h5>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="name"
+                            placeholder=""
+                          />
+                        </div>
+                        <div class="form-group">
+                          <h5 for="phone">Số điện thoại</h5>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="phone"
+                            placeholder=""
+                          />
+                        </div>
+                        <div class="form-group">
+                          <h5 for="email">Gmail</h5>
+                          <input
+                            type="email"
+                            class="form-control"
+                            id="email"
+                            placeholder=""
+                          />
+                        </div>
+                        <div class="form-group">
+                          <h5 for="message">Địa chỉ nhận hàng</h5>
+                          <textarea class="form-control" id="message" rows="3"></textarea>
+                        </div>
+                        <button class="button button--flex" class="btn btn-primary" onclick="sendMail()">
+                          Đặt hàng
+                          <i class="ri-arrow-right-up-line button__icon"></i>
+                        </button> 
+                    </div> <br> <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                </div>
+                  
+            </form>
+		</div> <br>
+	</section>
+
+	<!--==================== FOOTER ====================-->
+	<footer class="footer__section"> <br>
+		<div class="footer__container container grid">
+			<div class="footer__content">
+				<ul class="footer__data">
+					<li class="footer__information">146 Hai Bà Trưng - Thị xã Quảng Trị</li> 
+					<!-- <li class="footer__information">ABC-xyz</li> -->
+					<!-- <li class="footer__information">Tỉnh Quảng Trị</li> -->
+				</ul>
+			</div>
+			<div class="footer__content">
+				<!-- <h3 class="footer__title">Liên hệ</h3> -->
+
+				<ul class="footer__data">
+					<!-- <li class="footer__information">+999 888 777</li> -->
+					
+					<div class="footer__social">
+						<a href="https://www.facebook.com/people/SAPO/100089771298900/" class="footer__social-link">
+							<i class="ri-facebook-fill"></i>
+						</a>
+						<a href="https://www.instagram.com/s.a.p.0/" class="footer__social-link">
+							<i class="ri-instagram-line"></i>
+						</a>
+						<!-- <a href="https://twitter.com/" class="footer__social-link">
+							<i class="ri-twitter-fill"></i>
+						</a> -->
+					</div> 
+				</ul>
+			</div> 
+
+			<!-- <div class="footer__content">
+				<h3 class="footer__title">
+					We accept all credit cards
+				</h3>
+
+				<div class="footer__cards">
+					<img src="assets/img/card1.png" alt="" class="footer__card">
+					<img src="assets/img/card2.png" alt="" class="footer__card">
+					<img src="assets/img/card3.png" alt="" class="footer__card">
+					<img src="assets/img/card4.png" alt="" class="footer__card">
+				</div>
+			</div> -->
+		</div> <br>
+
+		<!-- <p class="footer__copy">&#169; Bedimcode. All rigths reserved</p> -->
+	</footer>
+
+	<!--=============== SCROLL UP ===============-->
+	<a href="#" class="scrollup" id="scroll-up"> 
+		<i class="ri-arrow-up-fill scrollup__icon"></i>
+	</a>
+
+	<!--=============== SCROLL REVEAL ===============-->
+	<script src="assets/js/scrollreveal.min.js"></script>
+	
+	<!--=============== MAIN JS ===============-->
+	<script src="assets/js/main.js"></script>
+
+
+	</body>
+	</html>	

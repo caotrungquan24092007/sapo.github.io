@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <meta http-equip="X-UA-compatible" content="ie=edge">
+        <link rel="stylesheet" href="styles.css" media="screen" type="text/css" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <script type="text/javascript" src="jquery.store.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Hộp viên hoàn - S . A . P . O</title>
+    </head>
+    <body>
+        
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="index.html" class="nav__logo">
+                    <i class="ri-leaf-line nav__logo-icon"></i> S . A . P . O
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="index.html#home" class="nav__link active-link">Trang chủ</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="index.html#about" class="nav__link">Giới thiệu</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="index.html#products" class="nav__link">Sản phẩm</a>
+                        </li>
+                        <!-- <li class="nav__item">
+                            <a href="#faqs" class="nav__link">FAQs</a>
+                        </li> -->
+                        <li class="nav__item">
+                            <a href="contact.html" class="nav__link">Liên hệ</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
+
+                <div class="nav__btns">
+                    <!-- Theme change button -->
+                    <!-- <i class="ri-moon-line change-theme" id="theme-button"></i> -->
+                    
+                    <a href="cart.html" >
+                        <i style="font-size:24px" class="fa">&#xf07a;</i>
+                    </a>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!--==================== ABOUT & CART ====================--> 
+        <section class="about section container" id="about">
+            <div class="about__container grid">
+                <img src="assets/img/product2.png" alt="" class="about__img">
+
+                <div class="about__data">
+                    <h2 class="section__title about__title">
+                       Hộp viên hoàn
+                    </h2>
+                    
+                    <p class="about__description">
+                        Viên hoàn SAPO là dược phẩm giúp chữa trị chứng nôn ở người đau dạ dày. <br> <br>
+                        Dược phẩm là sự kết hợp giữa cao cây rau mương, một ít nghệ và mật ong giúp điều trị 
+                        chứng nôn ở người đau dạ dày, tốt cho dạ dày và đường tiêu hoá. <br>
+                        <br> Sản phẩm gồm 28 viên hoàn / hộp <br> Khối lượng tịnh: 150G <br> 
+                        Hạn sử dụng: 12 tháng <br> Bảo quản: Để nơi thoáng mát, tránh tiếp xúc ánh nắng 
+                        mặt trời, đậy nắp kín trước và sau khi sử dụng. 
+                        
+                        
+                        <br> <br> <h3>Giá bán: 145.000 đ</h3>
+                    </p>
+                </div>
+            </div>
+
+            <div id="site">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                        <div class="product-bottom text-center">
+                        <div class="product-description" data-name="Hộp viên hoàn" data-price="145000">
+                            
+                            <!-- <p class="product-price">28000</p> -->
+                        <form class="add-to-cart" action="cart.html">
+                                    
+                            <br> <button class="button button--flex">
+                                Mua ngay
+                                <i class="ri-arrow-right-up-line button__icon"></i>
+                            </button>
+                        </form>          
+                        </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </section>
+
+        <!--==================== PRODUCTS ====================-->
+        <section class="product__section__container" id="products">
+            <br> <h2 class="section__title-center">
+                SẢN PHẨM KHÁC
+            </h2>
+
+            <div class="product__container grid">
+                <article class="product__card">
+                    <div class="product__circle"></div>
+
+                    <img src="assets/img/product1.png" alt="" class="product__img">
+
+                    <h3 class="product__title">Hộp trà</h3>
+                    <span class="product__price">56.000 đ</span>
+                    
+                    <a href="sp1.html" >
+                        <button class="button--flex product__button">
+                            <i class="ri-shopping-bag-line"></i>
+                        </button>
+                    </a>
+                </article>
+
+                <!-- <article class="product__card">
+                    <div class="product__circle"></div>
+
+                    <img src="assets/img/product2.png" alt="" class="product__img">
+
+                    <h3 class="product__title">Hộp viên hoàn</h3>
+                    <span class="product__price">150.000 đ</span>
+
+                    <a href="sp2.html" >
+                        <button class="button--flex product__button">
+                            <i class="ri-shopping-bag-line"></i>
+                        </button>
+                    </a>
+                </article> -->
+            </div>
+        </section>
+        <!--==================== FOOTER ====================-->
+        <footer class="footer__section"> <br>
+            <div class="footer__container container grid">
+                <div class="footer__content">
+                    <ul class="footer__data">
+                        <li class="footer__information">146 Hai Bà Trưng - Thị xã Quảng Trị</li> 
+                        <!-- <li class="footer__information">ABC-xyz</li> -->
+                        <!-- <li class="footer__information">Tỉnh Quảng Trị</li> -->
+                    </ul>
+                </div>
+                <div class="footer__content">
+                    <!-- <h3 class="footer__title">Liên hệ</h3> -->
+
+                    <ul class="footer__data">
+                        <!-- <li class="footer__information">+999 888 777</li> -->
+                        
+                        <div class="footer__social">
+                            <a href="https://www.facebook.com/people/SAPO/100089771298900/" class="footer__social-link">
+                                <i class="ri-facebook-fill"></i>
+                            </a>
+                            <a href="https://www.instagram.com/s.a.p.0/" class="footer__social-link">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+                            <!-- <a href="https://twitter.com/" class="footer__social-link">
+                                <i class="ri-twitter-fill"></i>
+                            </a> -->
+                        </div> 
+                    </ul>
+                </div> 
+
+                <!-- <div class="footer__content">
+                    <h3 class="footer__title">
+                        We accept all credit cards
+                    </h3>
+
+                    <div class="footer__cards">
+                        <img src="assets/img/card1.png" alt="" class="footer__card">
+                        <img src="assets/img/card2.png" alt="" class="footer__card">
+                        <img src="assets/img/card3.png" alt="" class="footer__card">
+                        <img src="assets/img/card4.png" alt="" class="footer__card">
+                    </div>
+                </div> -->
+            </div>
+
+            <!-- <p class="footer__copy">&#169; Bedimcode. All rigths reserved</p> -->
+        </footer>
+
+        <!--=============== SCROLL UP ===============-->
+        <a href="#" class="scrollup" id="scroll-up"> 
+            <i class="ri-arrow-up-fill scrollup__icon"></i>
+        </a>
+
+        <!--=============== SCROLL REVEAL ===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+        
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+
+    </body>
