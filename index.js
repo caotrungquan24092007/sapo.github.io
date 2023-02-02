@@ -3,11 +3,14 @@
 var params;
 
 function getData() {
+  
   const orders = sessionStorage.getItem('Funiture-cart');
   params = {product:orders.items};
 }
 
 function sendMail() {
+
+
   
   params = {
     ...params,
@@ -20,6 +23,9 @@ function sendMail() {
 
   };
   console.log(params);
+  localStorage.setItem('Data',params);
+
+
   const serviceID = "service_ua2pklx";
   const templateID = "template_3cp7zy7";
 
@@ -40,4 +46,6 @@ function sendMail() {
     .catch(err=>console.log(err));
 
 }
+
+
 
