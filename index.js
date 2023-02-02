@@ -12,8 +12,8 @@ function sendMail() {
 
   };
 
-  const serviceID = "service_ua2pklx";
-  const templateID = "template_3cp7zy7";
+  const serviceID = "service_6brmgh5";
+  const templateID = "template_8nnbcz5";
 
     emailjs.send(serviceID, templateID, params)
     .then(res=>{  
@@ -22,7 +22,7 @@ function sendMail() {
         document.getElementById("email").value = "";
         document.getElementById("phone").value = "";
         document.getElementById("message").value = "";
-        
+
         // document.getElementById("product").value = "";
         // document.getElementById("qty").value = "";
         console.log(res);
