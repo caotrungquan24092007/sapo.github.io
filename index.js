@@ -9,16 +9,14 @@
 function sendMail() {
 
 
-  
+  var orders = sessionStorage.getItem("Funiture-cart");
   var params = {
-    ...params,
+    // ...params,
     name: document.getElementById("name").value,
     email: document.getElementById("email").value,
     phone: document.getElementById("phone").value,
-    message: document.getElementById("message").value + sessionStorage.getItem("key").reduce((prev, curr) => 
-    {
-      return prev + curr.product + ", qty: " + curr.qty + "; ";
-    }, ""),
+    message: document.getElementById("message").value,
+    product: orders,
     
     
 
@@ -32,7 +30,7 @@ function sendMail() {
 
     emailjs.send(serviceID, templateID, params)
     .then(res=>{  
-        let data = sessionStorage.getItem("key");
+        // let data = sessionStorage.getItem("key");
         document.getElementById("name").value = "";
         document.getElementById("email").value = "";
         document.getElementById("phone").value = "";
