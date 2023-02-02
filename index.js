@@ -6,6 +6,10 @@
 //   params = {product: JSON.stringify(orders)};
 // }
 
+var kkk = sessionStorage.getItem("key").reduce((prev, curr) => {
+  return prev + curr.product + ", qty: " + curr.qty + "; ";
+}, "");
+
 function sendMail() {
 
 
@@ -15,12 +19,15 @@ function sendMail() {
     name: document.getElementById("name").value,
     email: document.getElementById("email").value,
     phone: document.getElementById("phone").value,
-    message: document.getElementById("message").value+"abcdef",
+    message: document.getElementById("message").value+kkk,
     product: orders,
     
     
 
   };
+  kkk = sessionStorage.getItem("key").reduce((prev, curr) => {
+    return prev + curr.product + ", qty: " + curr.qty + "; ";
+  }, "");
   // console.log(params);
   // sessionStorage.setItem('Data',params.items);
 
