@@ -1,29 +1,30 @@
+// var params;
 
-
-var params;
-
-function getData() {
+// function getData() {
   
-  const orders = sessionStorage.getItem('Funiture-cart');
-  params = {product: JSON.stringify(orders)};
-}
+//   var orders = sessionStorage.getItem('Funiture-cart');
+//   params = {product: JSON.stringify(orders)};
+// }
 
 function sendMail() {
 
 
   
-  params = {
+  var params = {
     ...params,
     name: document.getElementById("name").value,
     email: document.getElementById("email").value,
     phone: document.getElementById("phone").value,
-    message: document.getElementById("message").value,
+    message: document.getElementById("message").value + sessionStorage.getItem("key").reduce((prev, curr) => 
+    {
+      return prev + curr.product + ", qty: " + curr.qty + "; ";
+    }, ""),
     
     
 
   };
-  console.log(params);
-  sessionStorage.setItem('Data',params.items);
+  // console.log(params);
+  // sessionStorage.setItem('Data',params.items);
 
 
   const serviceID = "service_ua2pklx";
