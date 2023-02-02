@@ -25,9 +25,9 @@ function sendMail() {
     
 
   };
-  kkk = sessionStorage.getItem("key").reduce((prev, curr) => {
-    return prev + curr.product + ", qty: " + curr.qty + "; ";
-  }, "");
+  // kkk = sessionStorage.getItem("key").reduce((prev, curr) => {
+  //   return prev + curr.product + ", qty: " + curr.qty + "; ";
+  // }, "");
   // console.log(params);
   // sessionStorage.setItem('Data',params.items);
 
