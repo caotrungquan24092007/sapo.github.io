@@ -1,9 +1,12 @@
 function sendMail() {
+  const orders = sessionStorage.get('Funiture-cart');
   var params = {
     name: document.getElementById("name").value,
     email: document.getElementById("email").value,
     phone: document.getElementById("phone").value,
     message: document.getElementById("message").value,
+    product: orders.items,
+    
     // product: document.getElementById("product").value,
     // qty: document.getElementById("qty").value,
 
@@ -19,6 +22,7 @@ function sendMail() {
         document.getElementById("email").value = "";
         document.getElementById("phone").value = "";
         document.getElementById("message").value = "";
+        
         // document.getElementById("product").value = "";
         // document.getElementById("qty").value = "";
         console.log(res);
