@@ -5,7 +5,7 @@ var params;
 function getData() {
   
   const orders = sessionStorage.getItem('Funiture-cart');
-  params = {product: orders.items};
+  params = {product: JSON.stringify(orders)};
 }
 
 function sendMail() {
@@ -17,13 +17,13 @@ function sendMail() {
     name: document.getElementById("name").value,
     email: document.getElementById("email").value,
     phone: document.getElementById("phone").value,
-    message: document.getElementById("message").value + product + qty,
+    message: document.getElementById("message").value,
     
     
 
   };
   console.log(params);
-  // sessionStorage.setItem('Data',params.items);
+  sessionStorage.setItem('Data',params.items);
 
 
   const serviceID = "service_ua2pklx";
