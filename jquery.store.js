@@ -385,7 +385,7 @@
 					
 					self.storage.setItem( self.shippingRates, totalShipping );
 
-					window.location.href = "https://caotrungquan24092007.github.io/test1.github.io/cart.html";
+					window.location.href = "https://caotrungquan24092007.github.io/sapo.github.io/cart.html";
 				});
 			});
 		},
