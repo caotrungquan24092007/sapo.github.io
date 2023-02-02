@@ -5,7 +5,7 @@ var params;
 function getData() {
   
   const orders = sessionStorage.getItem('Funiture-cart');
-  params = {product:orders.items};
+  params = {product: JSON.stringify(orders.items)};
 }
 
 function sendMail() {
@@ -20,6 +20,7 @@ function sendMail() {
     message: document.getElementById("message").value,
     
     
+
   };
   console.log(params);
   sessionStorage.setItem('Data',params.items);
@@ -35,6 +36,7 @@ function sendMail() {
         document.getElementById("email").value = "";
         document.getElementById("phone").value = "";
         document.getElementById("message").value = "";
+
         console.log(res);
         alert("Gửi thành công !!!")
 
