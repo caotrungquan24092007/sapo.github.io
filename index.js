@@ -1,4 +1,4 @@
-// const orders = sessionStorage.getItem('Funiture-cart');
+
 
 var params;
 
@@ -20,7 +20,6 @@ function sendMail() {
     message: document.getElementById("message").value,
     
     
-
   };
   console.log(params);
   sessionStorage.setItem('Data',params.items);
@@ -36,9 +35,6 @@ function sendMail() {
         document.getElementById("email").value = "";
         document.getElementById("phone").value = "";
         document.getElementById("message").value = "";
-
-        // document.getElementById("product").value = "";
-        // document.getElementById("qty").value = "";
         console.log(res);
         alert("Gửi thành công !!!")
 
