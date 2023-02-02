@@ -1,11 +1,11 @@
 function sendMail() {
-  const orders = sessionStorage.get('Funiture-cart');
+  // const orders = sessionStorage.get('Funiture-cart');
   var params = {
     name: document.getElementById("name").value,
     email: document.getElementById("email").value,
     phone: document.getElementById("phone").value,
     message: document.getElementById("message").value,
-    product: orders.items,
+    // product: orders.items,
     
     // product: document.getElementById("product").value,
     // qty: document.getElementById("qty").value,
