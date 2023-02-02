@@ -1,5 +1,8 @@
 const orders = sessionStorage.get('Funiture-cart');
-
+document.getElementById('user_form').addEventListener('click',(e) => {
+    e.preventDefault()
+    document.getElementById('user_form').removeEventListener('click')
+})
 function sendMail() {
   
   var params = {
@@ -7,13 +10,13 @@ function sendMail() {
     email: document.getElementById("email").value,
     phone: document.getElementById("phone").value,
     message: document.getElementById("message").value,
-    product: orders.items,
+    
     
     // product: document.getElementById("product").value,
     // qty: document.getElementById("qty").value,
 
   };
-
+  console.log(orders.items);
   const serviceID = "service_6brmgh5";
   const templateID = "template_8nnbcz5";
 
