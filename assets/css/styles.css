@@ -314,8 +314,7 @@ the website, in dark theme
 /*=============== HOME ===============*/
 .home{
   padding: 4rem 0 3rem;
-  background-image: url("https://www.solidbackgrounds.com/images/1920x1080/1920x1080-dark-green-solid-color-background.jpg");
-  background-repeat: no-repeat;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATYAAACjCAMAAAA3vsLfAAAAA1BMVEVNlnXYTItmAAAASElEQVR4nO3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACOBsYFAAFnhEPqAAAAAElFTkSuQmCC");
  
 
 } 
@@ -517,7 +516,7 @@ the website, in dark theme
 
 /*=============== PRODUCTS ===============*/
 .product__section__container{
-  background-image: url("https://www.solidbackgrounds.com/images/1920x1080/1920x1080-dark-green-solid-color-background.jpg");
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATYAAACjCAMAAAA3vsLfAAAAA1BMVEVNlnXYTItmAAAASElEQVR4nO3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACOBsYFAAFnhEPqAAAAAElFTkSuQmCC");
 }
 .section__title-center{
   color: #ffffff;
