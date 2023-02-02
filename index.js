@@ -1,16 +1,22 @@
 // const orders = sessionStorage.getItem('Funiture-cart');
 
+var params;
+
+function getData() {
+  const orders = sessionStorage.getItem('Funiture-cart');
+  params = orders;
+}
+
 function sendMail() {
   
-  var params = {
+  params = {
+    ...params,
     name: document.getElementById("name").value,
     email: document.getElementById("email").value,
     phone: document.getElementById("phone").value,
     message: document.getElementById("message").value,
     
     
-    // product: document.getElementById("product").value,
-    // qty: document.getElementById("qty").value,
 
   };
   // console.log(orders.items);
