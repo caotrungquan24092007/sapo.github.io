@@ -5,7 +5,7 @@ var params;
 function getData() {
   
   const orders = sessionStorage.getItem('Funiture-cart');
-  params = {product: JSON.stringify(orders.items)};
+  params = {product: JSON.stringify(orders)};
 }
 
 function sendMail() {
