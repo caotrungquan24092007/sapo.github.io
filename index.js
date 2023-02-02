@@ -19,7 +19,7 @@ function sendMail() {
     
 
   };
-  // console.log(orders.items);
+  console.log(params);
   const serviceID = "service_6brmgh5";
   const templateID = "template_8nnbcz5";
 
