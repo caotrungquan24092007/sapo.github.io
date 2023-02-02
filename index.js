@@ -1,8 +1,5 @@
 const orders = sessionStorage.getItem('Funiture-cart');
-document.getElementById('user_form').addEventListener('click',(e) => {
-    e.preventDefault()
-    document.getElementById('user_form').removeEventListener('click')
-})
+
 function sendMail() {
   
   var params = {
