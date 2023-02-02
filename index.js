@@ -1,16 +1,16 @@
 // var params;
 
 function getData() {
-  var kkk = (sessionStorage.getItem("key") || []).reduce((prev, curr) => {
-    return prev + curr.product + ", qty: " + curr.qty + "; ";
-  }, "")
+
 }
 
 
 
 function sendMail() {
 
-
+  var kkk = (sessionStorage.getItem("key") || []).reduce((prev, curr) => {
+    return prev + curr.product + ", qty: " + curr.qty + "; ";
+  }, "")
   var orders = sessionStorage.getItem("Funiture-cart");
   var params = {
     // ...params,
