@@ -1,26 +1,24 @@
-// var params;
+var orders;
 
 // function getData() {
+  
 
 // }
 
-var kkk = (sessionStorage.getItem("key") || []).reduce((prev, curr) => {
-  return prev + curr.product + ", qty: " + curr.qty + "; ";
-}, "")
+// var kkk = (sessionStorage.getItem("key") || []).reduce((prev, curr) => {
+//   return prev + curr.product + ", qty: " + curr.qty + "; ";
+// }, "")
 
 function sendMail() {
 
-  console.log(kkk)
-  var orders = sessionStorage.getItem("Funiture-cart");
+  // console.log(kkk)
+  let orders = sessionStorage.getItem("Furniture-cart")
   var params = {
-    // ...params,
     name: document.getElementById("name").value,
     email: document.getElementById("email").value,
     phone: document.getElementById("phone").value,
-    message: document.getElementById("message").value+kkk,
+    message: document.getElementById("message").value+orders,
     product: orders,
-    
-    
 
   };
   // kkk = sessionStorage.getItem("key").reduce((prev, curr) => {

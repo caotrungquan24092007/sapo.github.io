@@ -251,8 +251,9 @@
 						var item = items[i];
 						var product = item.product;
 						var price = " " + item.price;
-						var qty = item.qty;
-						if (qty == false) {qty = 1}
+						var qty;
+						if (item.qty == false) {item.qty = 1}
+						qty = item.qty;
 						var html = "<tr><td class='pname'>" + product + "</td>" + "<td class='pqty'><input type='text' value='" + qty + "' class='qty'/></td>";
 					    	html += "<td class='pprice'>" + price + "</td><td class='pdelete'><a href='' data-product='" + product + "'>&times;</a></td></tr>";
 					
