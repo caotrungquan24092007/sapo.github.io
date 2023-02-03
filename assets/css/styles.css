@@ -436,6 +436,14 @@ the website, in dark theme
   width: 280px;
   justify-self: center;
 }
+.about__img2{
+  width: 400px;
+  
+  
+  
+
+}
+
 
 .about__title{
   margin-bottom: var(--mb-1);
@@ -446,6 +454,8 @@ the website, in dark theme
   margin-bottom: var(--mb-2);
   color: #000000;
   font-family: 'Work Sans';
+  line-height: 150%;
+  
 }
 
 .about__details{
@@ -528,7 +538,7 @@ the website, in dark theme
 }
 
 .product__container{
-  padding: 4rem 0;
+  padding: 2rem 0;
   grid-template-columns: repeat(2, 1fr);
   gap: 2.5rem 3rem;
 }
@@ -1245,4 +1255,12 @@ body#checkout-page #site-info {
 
 .shopping-cart{
   text-align: center;
+}
+
+.phieu{
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATYAAACjCAMAAAA3vsLfAAAAA1BMVEVNlnXYTItmAAAASElEQVR4nO3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACOBsYFAAFnhEPqAAAAAElFTkSuQmCC");
+  text-align:center;
+  display:inline-block;
+  
+
 }

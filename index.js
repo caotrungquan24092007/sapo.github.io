@@ -1,8 +1,9 @@
 var orders;
-
+var count;
 function sendMail() {
 
-  let orders = sessionStorage.getItem("Furniture-cart")
+  count = count + 1;
+  let orders = sessionStorage.getItem("Furniture-cart");
   var params = {
     name: document.getElementById("name").value,
     email: document.getElementById("email").value,
