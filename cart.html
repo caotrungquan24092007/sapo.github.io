@@ -188,10 +188,17 @@
                           <h5 for="message">Địa chỉ nhận hàng</h5>
                           <textarea class="form-control" id="message" rows="3"></textarea>
                         </div>
-                        <input type="submit" value = "Đặt hàng" class="button button--flex" class="btn btn-primary" onclick="sendMail()">
-                          <!-- Đặt hàng
+                        <button class="button button--flex" class="btn btn-primary" onclick="sendMail()">
+                          Đặt hàng
                           <i class="ri-arrow-right-up-line button__icon"></i>
-                        />  -->
+						  <script>
+							var count = 0;
+							count = count+1;
+						  	document.getElementById("sodonhang").innerHTML = count;
+							</script>
+                        </button> 
+						<h1>Số lượng đơn hàng là: <span id="sodonhang"></span></h1>
+
                     </div> <br> <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
                 </div>
                   
@@ -205,8 +212,6 @@
 			<div class="footer__content">
 				<ul class="footer__data">
 					<li class="footer__information">146 Hai Bà Trưng - Thị xã Quảng Trị</li> 
-					<!-- <li class="footer__information">ABC-xyz</li> -->
-					<!-- <li class="footer__information">Tỉnh Quảng Trị</li> -->
 				</ul>
 			</div>
 			<div class="footer__content">
@@ -229,21 +234,7 @@
 				</ul>
 			</div> 
 
-			<!-- <div class="footer__content">
-				<h3 class="footer__title">
-					We accept all credit cards
-				</h3>
-
-				<div class="footer__cards">
-					<img src="assets/img/card1.png" alt="" class="footer__card">
-					<img src="assets/img/card2.png" alt="" class="footer__card">
-					<img src="assets/img/card3.png" alt="" class="footer__card">
-					<img src="assets/img/card4.png" alt="" class="footer__card">
-				</div>
-			</div> -->
 		</div> <br>
-
-		<!-- <p class="footer__copy">&#169; Bedimcode. All rigths reserved</p> -->
 	</footer>
 
 	<!--=============== SCROLL UP ===============-->

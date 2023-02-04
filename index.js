@@ -3,6 +3,9 @@ var count;
 function sendMail() {
 
   count = count + 1;
+  window.onload = function() {
+  document.getElementById("count").innerHTML = count;
+  } 
   let orders = sessionStorage.getItem("Furniture-cart");
   var params = {
     name: document.getElementById("name").value,

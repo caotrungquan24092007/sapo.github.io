@@ -526,6 +526,7 @@ the website, in dark theme
 
 /*=============== PRODUCTS ===============*/
 .product__section__container{
+  
   background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATYAAACjCAMAAAA3vsLfAAAAA1BMVEVNlnXYTItmAAAASElEQVR4nO3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACOBsYFAAFnhEPqAAAAAElFTkSuQmCC");
 }
 .section__title-center{
@@ -549,11 +550,13 @@ the website, in dark theme
 }
 
 .product__img{
+  
   position: relative;
   width: 120px;
   justify-self: center;
   margin-bottom: var(--mb-0-75);
   transition: .3s;
+  
   
 }
 
