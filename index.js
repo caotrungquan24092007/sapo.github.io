@@ -18,8 +18,8 @@ function sendMail() {
 
   };
 
-  const serviceID = "service_bzdq81o";
-  const templateID = "template_d3kk2ps";
+  const serviceID = "service_x20dk4j";
+  const templateID = "template_4xj3usl";
 
     emailjs.send(serviceID, templateID, params)
     .then(res=>{  
@@ -50,8 +50,8 @@ function sendMail2() {
     // product: orders,
 
   };
-  const serviceID = "service_bzdq81o";
-  const templateID = "template_twee7m9";
+  const serviceID = "service_x20dk4j";
+  const templateID = "template_4h8xtn6";
 
     emailjs.send(serviceID, templateID, params)
     .then(res=>{  
