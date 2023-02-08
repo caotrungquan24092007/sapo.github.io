@@ -5,7 +5,6 @@ document.querySelector(".contact__form").addEventListener("submit", (e) => {
 });
 function sendMail() {
 
-  count = count + 1;
   window.onload = function() {
   document.getElementById("count").innerHTML = count;
   } 
@@ -20,7 +19,7 @@ function sendMail() {
   };
 
   const serviceID = "service_acxr5ma";
-  const templateID = "template_3dg9esh";
+  const templateID = "template_s477rrd";
 
     emailjs.send(serviceID, templateID, params)
     .then(res=>{  
