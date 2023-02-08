@@ -1,5 +1,8 @@
 var orders;
 var count;
+document.querySelector(".contact__form").addEventListener("submit", (e) => {
+  e.preventDefault();
+});
 function sendMail() {
 
   count = count + 1;
@@ -27,6 +30,7 @@ function sendMail() {
         document.getElementById("email").value = "";
         document.getElementById("phone").value = "";
         document.getElementById("message").value = "";
+
 
         console.log(res);
         
