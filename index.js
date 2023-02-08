@@ -22,13 +22,14 @@ function sendMail() {
     emailjs.send(serviceID, templateID, params)
     .then(res=>{  
         // let data = sessionStorage.getItem("key");
+        alert("Gửi thành công !!!")
         document.getElementById("name").value = "";
         document.getElementById("email").value = "";
         document.getElementById("phone").value = "";
         document.getElementById("message").value = "";
 
         console.log(res);
-        alert("Gửi thành công !!!")
+        
 
     })
     .catch(err=>console.log(err));
